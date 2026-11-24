@@ -1,0 +1,87 @@
+/*RESET*/
+:root{
+    --primary_color:#4F4442;
+    --secondary_color:#845326;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: 0;
+  box-sizing: border-box;
+  background-color: #FFF8F3;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  padding: 20px 0;
+}
+.container {
+  max-width: 1440px;
+  padding: 0 48px;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo p {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 28px;
+}
+nav ul {
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+nav ul{
+    color:var(--primary_color);
+    cursor: pointer;
+}
+nav a.active {
+  color:var(--secondary_color);
+  position: relative;
+}
+nav a.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -6px;
+  height: 2px;
+  background-color: #845326;
+}
+button{
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #2B1B17;
+  border-radius: 12px;
+  color:#fff;
+  padding:10px 24px;
+  border:none;
+  cursor: pointer;
+  transition:background-color .3s ease;
+}
+button:hover{
+    background-color: var(--secondary_color);
+}
+button:active{
+    transform:scale(0.960);
+}
