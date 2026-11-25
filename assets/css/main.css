@@ -1,14 +1,16 @@
 /*RESET*/
-:root{
-    --primary_color:#4F4442;
-    --secondary_color:#845326;
+:root {
+  --primary_color: #4f4442;
+  --secondary_color: #845326;
+  --primary-font: "Plus Jakarta Sans";
+  --secondary-font: "Plus Jakarta Sans";
 }
 * {
   margin: 0;
   padding: 0;
   text-decoration: 0;
   box-sizing: border-box;
-  background-color: #FFF8F3;
+  background-color: #fff8f3;
 }
 a {
   text-decoration: none;
@@ -21,6 +23,8 @@ ul {
 header {
   width: 100%;
   padding: 20px 0;
+  box-shadow: 0px 1px 4px grey;
+  position: relative;
 }
 .container {
   max-width: 1440px;
@@ -42,6 +46,9 @@ header {
   font-weight: 700;
   font-size: 28px;
 }
+.query-logo{
+    display: none;
+}
 nav ul {
   font-family: "Plus Jakarta Sans", serif;
   font-size: 14px;
@@ -50,12 +57,12 @@ nav ul {
   align-items: center;
   gap: 32px;
 }
-nav ul{
-    color:var(--primary_color);
-    cursor: pointer;
+nav ul {
+  color: var(--primary_color);
+  cursor: pointer;
 }
 nav a.active {
-  color:var(--secondary_color);
+  color: var(--secondary_color);
   position: relative;
 }
 nav a.active::after {
@@ -67,21 +74,86 @@ nav a.active::after {
   height: 2px;
   background-color: #845326;
 }
-button{
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+.btn-visit {
   font-family: "Plus Jakarta Sans", serif;
   font-size: 14px;
   font-weight: 500;
-  background-color: #2B1B17;
+  background-color: #2b1b17;
   border-radius: 12px;
-  color:#fff;
-  padding:10px 24px;
-  border:none;
+  color: #fff;
+  padding: 10px 24px;
+  border: none;
   cursor: pointer;
-  transition:background-color .3s ease;
+  transition: background-color 0.3s ease;
 }
-button:hover{
-    background-color: var(--secondary_color);
+.btn-visit:hover {
+  background-color: var(--secondary_color);
 }
-button:active{
-    transform:scale(0.960);
+button:active {
+  transform: scale(0.96);
 }
+.btn-menu {
+  display: none;
+  border: none;
+}
+/*--------  End navbar -----------*/
+
+/*---------- Start responsive navbar ---------*/
+@media (max-width: 880px) {
+  nav,.logo .main-logo  {
+    display: none;
+  }
+  .btn-menu {
+    display: block;
+  }
+  .container {
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+  .logo p {
+    font-size: 20px;
+  }
+  .query-logo{
+    display: block;
+  }
+}
+/*---- End Responsive navbar ------*/
+
+/*------ page 1 ------*/
+.hero-content h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 64px;
+  font-weight: 600;
+}
+.hero {
+  padding-top: 91px;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 64px;
+}
+.hero-content p {
+  margin-top: 24px;
+  font-family: var(--primary-font);
+  color: var(--primary_color);
+}
+h1.hero-content::before {
+  content: "FRESHLY BREWED DAILY";
+  font-family: var(--secondary-font);
+  color: var(--secondary_color);
+  background-color: #f6ece2;
+  border-color: #d3c3c0;
+  border-radius: 12px;
+  padding: 14px;
+}
+.hero-img {
+  border-radius: 8px;
+  width: 100%;
+}
+
