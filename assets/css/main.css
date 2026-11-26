@@ -11,6 +11,8 @@
   padding: 0;
   text-decoration: 0;
   box-sizing: border-box;
+}
+body {
   background-color: #fff8f3;
 }
 a {
@@ -128,13 +130,13 @@ nav a.active::after {
 
 /*------ Start Hero Section ------*/
 /*------ Start content Section in hero page ------*/
+.hero {
+  padding-top: 91px;
+}
 .hero-content h1 {
   font-family: "Playfair Display", serif;
   font-size: 64px;
   font-weight: 600;
-}
-.hero {
-  padding-top: 91px;
 }
 .hero-grid {
   display: grid;
@@ -154,14 +156,20 @@ nav a.active::after {
   border: 1px solid #d3c3c0;
   border-radius: 12px;
   width: fit-content;
-  padding: 6px 14px 6px 32.67px;
+  padding: 6px 14px;
   margin-bottom: 24px;
 }
+
+.resp-hero-coffee-badge {
+  display: none;
+}
+
 .hero-content p {
   margin-top: 24px;
   font-family: var(--primary-font);
   color: var(--primary_color);
 }
+
 .btns-content {
   display: flex;
   gap: 16px;
@@ -200,11 +208,16 @@ nav a.active::after {
   margin-top: 57px;
   border-top: 1px solid #d3c3c0;
 }
-.status span {
+.main-100,.main-49,.main-15 {
   font-size: 12px;
   font-family: var(--primary-font);
   font-weight: 600;
   color: var(--primary_color);
+}
+.resp-15,
+.resp-100,
+.resp-49 {
+  display: none;
 }
 .status strong {
   font-size: 28px;
@@ -224,7 +237,165 @@ nav a.active::after {
 }
 
 /* ---------- Start img section in hero page -------*/
-.hero-img {
+.img-hero-section {
+  position: relative;
+}
+.resp-hero-content {
+  display: none;
+}
+.layer1 {
+  background-color: #f0e7dd;
+  transform: rotate(-2deg) scale(1.05);
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  z-index: 0;
+  padding: 26.17px 25.21px;
+}
+.layer2 {
+  background-color: white;
   border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 13px;
+}
+.layer3 img {
   width: 100%;
+  border-radius: 8px;
+}
+.badge-img-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #fff8f3;
+}
+.badge-img-section img {
+  background-color: #f0e7dd;
+  padding: 11.67px 13.33px;
+  border-radius: 12px;
+}
+.badge-img-section strong {
+  font-family: var(--primary-font);
+  display: block;
+}
+.badge-img-section span {
+  font-family: var(--primary-font);
+}
+/* ---------- Start img section in hero page -------*/
+
+/*------- Start img responsive ----------- */
+@media (max-width: 880px) {
+  .container {
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+  .hero {
+    padding-top: 29.72px;
+  }
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+  }
+  .FireSpan {
+    display: none;
+  }
+  .resp-hero-coffee-badge {
+    display: block;
+  }
+  .hero-content {
+    display: contents;
+  }
+  .img-hero-section {
+    order: 1;
+  }
+  .hero-content h1 {
+    font-size: 40px;
+    margin-top: 0;
+    line-height: 1.15;
+  }
+  .hero-content p {
+    margin-top: 0px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .hero-badge {
+    padding: 4px 12px 0px 12px;
+  }
+  .btns-content {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 0;
+  }
+  .layer1 {
+    display: none;
+  }
+  .layer2 {
+    padding: 0px;
+    border-radius: 8px;
+    box-shadow: none;
+  }
+  .layer3 img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    position: relative;
+  }
+  .resp-hero-content {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #fff8f3;
+  }
+  .badge-img-section {
+    display: none;
+  }
+ .status {
+    order: 2;
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    margin-top: 0;
+    padding: 12px 8px;
+    border: 1px solid #f0e7dd;
+    border-radius: 8px;
+  }
+  .stat {
+    flex: 1;
+    margin-top: 0;
+    padding: 0 8px;
+    text-align: center;
+  }
+
+  .stat:first-child {
+    padding-left: 8px;
+  }
+
+  .status strong {
+    font-size: 20px;
+  }
+  .status span {
+    font-size: 11px;
+  }
+
+  .main-100,.main-49,.main-15 {
+    display: none;
+  }
+  .resp-15,
+  .resp-100,
+  .resp-49 {
+    display: block;
+  }
 }
