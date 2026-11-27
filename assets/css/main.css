@@ -1021,7 +1021,6 @@ button:hover .main-order {
 }
 
 /*-------- End Responsive for HERITAGE page 3*/
-
 .flexing {
   display: flex;
   flex-direction: column;
@@ -1154,5 +1153,45 @@ button:hover .main-order {
     gap: 16px;
     justify-content: center;
     align-items: center;
+  }
+}
+
+/*--------- End Responsive for page 4 --------*/
+/*-------- Start with details page -------------*/
+.info {
+  display: none;
+}
+
+/*-------- End with details page -------------*/
+@media (max-width: 880px) {
+  .details {
+    background-color: #fcf2e8;
+    padding-top: 24px;
+    padding-bottom:17px;
+  }
+  .site,
+  .days,
+  .num {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: flex-start;
+  }
+  .info .span {
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--third-color);
+  }
+  .info h3{
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
   }
 }
