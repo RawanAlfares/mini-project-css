@@ -1022,3 +1022,137 @@ button:hover .main-order {
 
 /*-------- End Responsive for HERITAGE page 3*/
 
+.flexing {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b1b17;
+  padding: 64px 207px;
+  border-radius: 16px;
+  margin-bottom: 80px;
+}
+.flexing h3 {
+  text-align: center;
+}
+.speacil {
+  display: flex;
+  gap: 8px;
+  font-family: var(--primary-font);
+  font-weight: 600px;
+  font-size: 12px;
+  background-color: #5d3d357d;
+  color: #ffdcc2;
+  padding: 6px 16px;
+  border-radius: 12px;
+  width: fit-content;
+}
+.flexing h3 {
+  font-family: var(--secondary-font);
+  font-weight: 600px;
+  font-size: 64px;
+  color: #fff8f3;
+}
+.flexing p {
+  font-family: var(--primary-font);
+  font-weight: 400px;
+  font-size: 18px;
+  color: #d3c3c0;
+}
+.code {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffdcc2;
+  display: flex;
+  gap: 8px;
+  background-color: #5d3d357d;
+  padding: 12px 24px;
+  border: 1px dashed #845326;
+  justify-content: center;
+  align-items: center;
+}
+.offer {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+  display: flex;
+  gap: 8px;
+  background-color: #845326;
+  padding: 12.44px 32.3px;
+  border: none;
+}
+.btn4 {
+  display: flex;
+  gap: 16px;
+}
+.Resp-welcoming {
+  display: none;
+}
+
+@media (max-width: 880px) {
+  .speacil {
+    display: none;
+  }
+  .flexing {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b1b17;
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+  }
+  .Resp-welcoming {
+    display: block;
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 12px;
+    background-color: #5d3d357d;
+    color: #ffdcc2;
+    padding: 6px 16px;
+    border-radius: 12px;
+    width: fit-content;
+  }
+  .flexing h3 {
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    font-size: 28px;
+    color: #fff8f3;
+  }
+  .flexing p {
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 14px;
+    color: #d3c3c0;
+    align-items: center;
+    text-align: center;
+  }
+  .btn4 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .code img {
+    display: none;
+  }
+  .code {
+    width: fit-content;
+  }
+  .offer {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+  }
+}
