@@ -661,8 +661,8 @@ nav a.active::after {
 button:hover .main-order {
   filter: brightness(0) invert(1);
 }
-.resp-heading{
-    display: none;
+.resp-heading {
+  display: none;
 }
 /*------ End with Customer Favorites ----------*/
 /*----- Start with Customer Favorites Responsive --------*/
@@ -803,31 +803,29 @@ button:hover .main-order {
 }
 .img-sec-3 {
   width: 100%;
-  max-width: 560px;
-  justify-self: center;
   background-color: white;
   padding: 8px;
   border-radius: 12px;
   position: relative;
 }
-.badge{
-    position:absolute;
-    background-color: var(--third-color);
-    color: #FFDCC2;
-    padding:16px 24px;
-    border-radius: 8px;
-    right:-28px;
-    bottom:-28px;
+.badge {
+  position: absolute;
+  background-color: var(--third-color);
+  color: #ffdcc2;
+  padding: 16px 24px;
+  border-radius: 8px;
+  right: -28px;
+  bottom: -28px;
 }
-.badge p{
-font-size: 28px;
-font-weight: 600px;
-font-family: var(--secondary-font);
+.badge p {
+  font-size: 28px;
+  font-weight: 600px;
+  font-family: var(--secondary-font);
 }
-.badge span{
-font-size: 12px;
-font-weight: 600px;
-font-family: var(--primary-font);
+.badge span {
+  font-size: 12px;
+  font-weight: 600px;
+  font-family: var(--primary-font);
 }
 .img-sec-3 img {
   width: 100%;
@@ -895,7 +893,7 @@ font-family: var(--primary-font);
   border-radius: 12px;
   width: fit-content;
   font-weight: 600;
-  top:24px;
+  top: 24px;
 }
 
 .btn3 {
@@ -911,3 +909,116 @@ font-family: var(--primary-font);
 .btn3:hover {
   background-color: var(--secondary_color);
 }
+.resp-PHILOSOPHY {
+  display: none;
+}
+.Resp-types {
+  display: none;
+}
+.sec3-resp {
+  display: none;
+}
+/*----- End HERITAGE Page 3 --------*/
+/* ------- Begin with responsive ------*/
+@media (max-width: 880px) {
+  .HERITAGE-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    margin-top: 32px;
+    margin-bottom: 32px;
+    gap: 8px;
+  }
+  .img-sec-3 {
+    width: 100%;
+    background-color: #fff8f3;
+    border-radius: 16px;
+  }
+  .badge {
+    display: none;
+  }
+  .img-sec-3 span {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 600px;
+    font-family: var(--primary-font);
+    color: var(--secondary_color);
+    font-size: 12px;
+  }
+  .img-sec-3 span::before {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: var(--secondary_color);
+    flex-shrink: 0;
+  }
+  .content-sec-3::before {
+    display: none;
+  }
+  .content-sec-3 h2 {
+    font-size: 28px;
+  }
+  .sec3-resp p {
+    font-size: 14px;
+  }
+  .types {
+    display: none;
+  }
+  .Resp-types {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .Res-type {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcf2e8;
+    border: 1px solid #d3c3c0;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  .resp-description strong {
+    font-size: 14px;
+    font-family: var(--primary-font);
+  }
+  .resp-description p {
+    font-size: 12px;
+    font-family: var(--primary-font);
+  }
+  .sec3-resp {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary_color);
+    font-family: var(--primary-font);
+  }
+  .resp-PHILOSOPHY {
+    display: none;
+  }
+  .sec3 {
+    display: none;
+  }
+  .btn3 img {
+    display: none;
+  }
+  .btn3 {
+    padding: 12px 20px;
+    background-color: #f6ece2;
+    width: 100%;
+    border: 1px solid #d3c3c0;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: var(--primary-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/*-------- End Responsive for HERITAGE page 3*/
+
